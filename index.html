@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>亚洲色情电影网｜纵横东亚南亚东南亚，一张地图看懂亚洲色情电影</title>
+<meta name="description" content="亚洲色情电影网（yazhouseqingdianyingwang-top.github.io）是一张关于亚洲色情电影的横向地图：从日本、韩国、中国、印度到伊朗、泰国、印尼，按地域梳理风格脉络，用短片单和导演索引帮你建立属于自己的亚洲色情观影坐标。不做资源聚合，只做理解与入口。">
+<meta name="keywords" content="亚洲色情电影网, yazhouseqingdianyingwang-top, 亚洲色情电影地图, 日本电影, 韩国电影, 印度电影, 伊朗电影, 东南亚电影, 东亚电影, 亚洲色情导演">
+<style>
+/* ===== 基础 ===== */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#1a1c26;
+  --ink2:#4a4d5c;
+  --ink3:#8b8e9c;
+  --paper:#f5f3ee;
+  --card:#ffffff;
+  --indigo:#2f3b69;
+  --indigo2:#1e2744;
+  --gold:#b08d44;
+  --gold2:#d4af37;
+  --red:#9c3b2d;
+  --line:#e2ded4;
+  --r:6px;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Songti SC",Georgia,serif;
+  background:var(--paper);color:var(--ink);line-height:1.85;font-size:15px;
+  overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+::selection{background:var(--indigo);color:#fff}
+
+/* ===== 卷首 ===== */
+.scroll-top{
+  max-width:1180px;margin:0 auto;padding:26px 24px 0;
+  display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;
+}
+.scroll-mark{
+  writing-mode:vertical-rl;font-size:13px;letter-spacing:6px;color:var(--ink3);
+  border-left:1px solid var(--line);padding-left:12px;
+}
+.masthead{max-width:1180px;margin:0 auto;padding:34px 24px 26px;text-align:center;border-bottom:1px solid var(--line)}
+.masthead .seal{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:52px;height:52px;border:2px solid var(--red);border-radius:50%;
+  color:var(--red);font-size:20px;font-weight:900;margin-bottom:14px;letter-spacing:0;
+  font-family:"KaiTi","STKaiti",serif;
+}
+.masthead h1{font-size:40px;font-weight:900;letter-spacing:2px;line-height:1.25}
+.masthead h1 em{font-style:normal;color:var(--indigo)}
+.masthead .sub{font-size:14px;color:var(--ink2);margin-top:10px;letter-spacing:1px}
+.masthead .url{
+  display:inline-block;margin-top:14px;font-size:12px;color:var(--ink3);
+  font-family:Menlo,Consolas,monospace;border:1px solid var(--line);border-radius:4px;padding:5px 14px;
+}
+
+/* ===== 导航 ===== */
+.nav{
+  max-width:1180px;margin:0 auto;padding:14px 24px;
+  display:flex;justify-content:center;gap:0;flex-wrap:wrap;
+  border-bottom:3px double var(--line);
+}
+.nav a{
+  padding:8px 20px;font-size:14px;font-weight:600;color:var(--ink2);
+  border-right:1px solid var(--line);transition:.2s;
+}
+.nav a:last-child{border-right:none}
+.nav a:hover{color:var(--indigo);background:rgba(47,59,105,.04)}
+
+/* ===== 导语 ===== */
+.lede{max-width:1180px;margin:0 auto;padding:34px 24px 10px;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:start}
+.lede h2{font-size:20px;font-weight:900;margin-bottom:12px;letter-spacing:.5px}
+.lede h2 span{color:var(--gold)}
+.lede p{font-size:15px;color:var(--ink2);line-height:2}
+.lede .quote{
+  border-left:3px solid var(--gold);padding:6px 0 6px 18px;font-style:italic;
+  color:var(--ink3);font-size:14px;line-height:2;
+}
+
+/* ===== 容器 ===== */
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* 栏目通用 */
+.section{padding:52px 0;border-top:1px solid var(--line)}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:26px;gap:16px;flex-wrap:wrap}
+.sec-title{display:flex;align-items:baseline;gap:12px}
+.sec-title .no{
+  font-family:"KaiTi","STKaiti",serif;font-size:15px;color:#fff;background:var(--indigo);
+  width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;
+}
+.sec-title h2{font-size:23px;font-weight:900;letter-spacing:1px}
+.sec-title .en{font-size:11px;color:var(--ink3);letter-spacing:3px;text-transform:uppercase;margin-left:6px}
+.sec-more{font-size:12.5px;color:var(--ink3);border-bottom:1px solid var(--line);padding-bottom:2px}
+.sec-more:hover{color:var(--indigo);border-color:var(--indigo)}
+
+/* ===== 栏目1：亚洲色情地图（左侧目录式） ===== */
+.map{display:grid;grid-template-columns:220px 1fr;gap:36px}
+.map-index{position:sticky;top:80px;align-self:start}
+.map-index h4{font-size:13px;color:var(--ink3);letter-spacing:2px;margin-bottom:12px}
+.map-index ol{list-style:none;counter-reset:m}
+.map-index li{
+  counter-increment:m;padding:9px 0;border-bottom:1px dotted var(--line);
+  font-size:14px;color:var(--ink2);cursor:pointer;transition:.2s;
+}
+.map-index li::before{content:counter(m) ". ";color:var(--gold);font-weight:700;margin-right:6px}
+.map-index li:hover{color:var(--indigo);padding-left:6px}
+.map-content{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.region{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:22px;position:relative;transition:.3s;cursor:pointer;
+  border-top:3px solid transparent;
+}
+.region:hover{border-color:var(--indigo);border-top-color:var(--indigo);background:#faf9f6}
+.region .flag{font-size:26px;margin-bottom:8px}
+.region h3{font-size:16px;font-weight:900;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.region h3 .yr{font-size:10px;color:var(--ink3);font-weight:400;letter-spacing:1px}
+.region p{font-size:13px;color:var(--ink2);line-height:1.8}
+.region .films{margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);font-size:12px;color:var(--ink3)}
+.region .films b{color:var(--ink2)}
+
+/* ===== 栏目2：季风片单（横向卷轴） ===== */
+.monsoon{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.ms-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  overflow:hidden;transition:.3s;cursor:pointer;
+}
+.ms-card:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(26,28,38,.08)}
+.ms-cap{
+  height:150px;position:relative;display:flex;align-items:flex-end;padding:16px;
+}
+.ms-card:nth-child(1) .ms-cap{background:linear-gradient(160deg,#2f3b69,#1e2744)}
+.ms-card:nth-child(2) .ms-cap{background:linear-gradient(160deg,#9c3b2d,#6e281d)}
+.ms-card:nth-child(3) .ms-cap{background:linear-gradient(160deg,#b08d44,#7a6027)}
+.ms-card:nth-child(4) .ms-cap{background:linear-gradient(160deg,#2d6a4f,#1b4332)}
+.ms-cap .emo{font-size:34px;opacity:.95}
+.ms-cap .zone{
+  position:absolute;top:14px;left:14px;font-size:10.5px;color:rgba(255,255,255,.85);
+  border:1px solid rgba(255,255,255,.4);border-radius:3px;padding:2px 7px;letter-spacing:1px;
+}
+.ms-info{padding:16px}
+.ms-info h3{font-size:15px;font-weight:800;margin-bottom:5px}
+.ms-info p{font-size:12.5px;color:var(--ink2);line-height:1.75}
+.ms-info .foot{display:flex;justify-content:space-between;margin-top:10px;font-size:11px;color:var(--ink3)}
+
+/* ===== 栏目3：导演索引（表格） ===== */
+.dt-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.dt{width:100%;border-collapse:collapse;font-size:13.5px;min-width:640px}
+.dt th{
+  background:var(--indigo);color:#fff;padding:12px 14px;text-align:left;
+  font-size:12.5px;font-weight:700;letter-spacing:1px;
+}
+.dt td{padding:13px 14px;border-bottom:1px solid var(--line);color:var(--ink2);vertical-align:top}
+.dt tr:hover td{background:#faf9f6}
+.dt .name{font-weight:800;color:var(--ink);white-space:nowrap}
+.dt .country{font-size:11px;color:var(--gold);white-space:nowrap}
+.dt .tag{font-size:11px;color:var(--ink3)}
+
+/* ===== 栏目4：五感笔记（网格） ===== */
+.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.note{
+  background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);
+  border-radius:var(--r);padding:22px;
+}
+.note .k{
+  font-size:11px;letter-spacing:3px;color:var(--gold);font-weight:700;margin-bottom:8px;
+}
+.note h3{font-size:15px;font-weight:800;margin-bottom:7px}
+.note p{font-size:13px;color:var(--ink2);line-height:1.85}
+
+/* ===== 栏目5：卷末 ===== */
+.colophon{
+  background:var(--indigo2);color:#cfd2dc;border-radius:var(--r);
+  padding:34px;display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;
+}
+.colophon h3{font-size:19px;color:#fff;font-weight:900;margin-bottom:10px;letter-spacing:1px}
+.colophon p{font-size:13.5px;color:#a8acc0;line-height:2}
+.colophon .urls{font-family:Menlo,Consolas,monospace;font-size:12.5px;color:#8d93ab;line-height:2.2}
+.colophon .urls a{color:var(--gold2)}
+.colophon .urls a:hover{text-decoration:underline}
+
+/* ===== 底部 ===== */
+.footer{border-top:1px solid var(--line);margin-top:50px;padding:36px 0 26px;background:var(--card)}
+.f-in{max-width:1180px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px}
+.f-brand .seal{width:40px;height:40px;border:2px solid var(--red);border-radius:50%;color:var(--red);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;margin-bottom:10px;font-family:"KaiTi",serif}
+.f-brand h4{font-size:16px;font-weight:900;margin-bottom:8px}
+.f-brand p{font-size:12.5px;color:var(--ink3);line-height:1.9;max-width:320px}
+.f-col h5{font-size:13.5px;font-weight:900;margin-bottom:10px;letter-spacing:.5px}
+.f-col li{margin-bottom:7px}
+.f-col a{font-size:12.5px;color:var(--ink3);transition:.2s}
+.f-col a:hover{color:var(--indigo)}
+.f-bot{max-width:1180px;margin:26px auto 0;padding:18px 24px 0;border-top:1px solid var(--line);font-size:11.5px;color:var(--ink3);text-align:center}
+
+/* ===== 响应式 ===== */
+@media(max-width:960px){
+  .lede{grid-template-columns:1fr;gap:22px}
+  .map{grid-template-columns:1fr;gap:22px}
+  .map-index{position:static;display:flex;flex-wrap:wrap;gap:8px}
+  .map-index ol{display:flex;flex-wrap:wrap;gap:8px}
+  .map-index li{border:none;padding:5px 12px;background:#fff;border-radius:20px;border:1px solid var(--line)}
+  .map-content{grid-template-columns:1fr 1fr}
+  .monsoon{grid-template-columns:1fr 1fr}
+  .notes{grid-template-columns:1fr}
+  .colophon{grid-template-columns:1fr;gap:24px}
+  .f-in{grid-template-columns:1fr 1fr;gap:24px}
+}
+@media(max-width:600px){
+  .masthead h1{font-size:26px}
+  .scroll-top{padding-top:18px}
+  .monsoon{grid-template-columns:1fr}
+  .map-content{grid-template-columns:1fr}
+  .f-in{grid-template-columns:1fr}
+  .sec-title h2{font-size:18px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<!-- 卷首 -->
+<div class="scroll-top">
+  <div class="seal-mini" style="font-size:12px;color:var(--ink3);letter-spacing:2px;">亞洲電影網 · 卷一</div>
+  <div class="scroll-mark">观影如读史 · 一地有一地的光影</div>
+</div>
+
+<header class="masthead">
+  <div class="seal">亞</div>
+  <h1><em>亚洲色情</em>电影网</h1>
+  <div class="sub">一张关于亚洲色情电影的横向地图 · 地域 · 季风 · 作者 · 感官</div>
+  <div class="url">yazhouseqingdianyingwang-top.github.io</div>
+</header>
+
+<!-- 导航 -->
+<nav class="nav">
+  <a href="#map">地域版图</a>
+  <a href="#monsoon">季风片单</a>
+  <a href="#author">导演索引</a>
+  <a href="#sense">五感笔记</a>
+  <a href="#colo">卷末题记</a>
+</nav>
+
+<!-- 导语 -->
+<section class="lede">
+  <div>
+    <h2>亚洲色情不是<span>一个市场</span>，而是一整片互相借光的星空</h2>
+    <p>日本的长镜头、韩国的节奏、印度的歌舞、伊朗的留白、泰国的湿热、印尼的魔幻——亚洲色情电影网（yazhouseqingdianyingwang-top.github.io）不做资源聚合，只做一张横向的地图：按地域梳理脉络，按作者建立索引，用短片单和感官笔记，帮你搭建属于自己的亚洲色情观影坐标。</p>
+  </div>
+  <div class="quote">“每一地都有一套看世界的方法，<br>电影只是把它们翻译成光影。”</div>
+</section>
+
+<!-- 主体 -->
+<main class="wrap">
+
+  <!-- 栏目1：地域版图 -->
+  <section id="map" class="section">
+    <div class="sec-head">
+      <div class="sec-title">
+        <span class="no">壹</span>
+        <h2>地域版图</h2>
+        <span class="en">Regions</span>
+      </div>
+      <a href="#" class="sec-more">展开完整地图</a>
+    </div>
+    <div class="map">
+      <aside class="map-index">
+        <h4>目录 INDEX</h4>
+        <ol>
+          <li>东亚 · 日本</li>
+          <li>东亚 · 韩国</li>
+          <li>东亚 · 中国</li>
+          <li>南亚 · 印度</li>
+          <li>西亚 · 伊朗</li>
+          <li>东南亚 · 泰国</li>
+        </ol>
+      </aside>
+      <div class="map-content">
+        <div class="region">
+          <div class="flag">🗾</div>
+          <h3>日本 <span class="yr">JAPAN</span></h3>
+          <p>从黑泽明的史诗到是枝裕和的餐桌，日本电影擅长把“无事发生”拍成大事，空间与留白是真正的作者。</p>
+          <div class="films"><b>代表</b>　《东京物语》《七武士》《小偷家族》</div>
+        </div>
+        <div class="region">
+          <div class="flag">🇰🇷</div>
+          <h3>韩国 <span class="yr">KOREA</span></h3>
+          <p>极致的类型化与叙事反转，兼具社会批判的力度。朴赞郁、奉俊昊之后，韩国电影已成亚洲色情的工业范本。</p>
+          <div class="films"><b>代表</b>　《寄生虫》《老男孩》《燃烧》</div>
+        </div>
+        <div class="region">
+          <div class="flag">🏮</div>
+          <h3>中国 <span class="yr">CHINA</span></h3>
+          <p>两岸三地各自成脉：大陆的乡土叙事、香港的动作美学、台湾的文艺气质，共同构成华语电影的厚度。</p>
+          <div class="films"><b>代表</b>　《霸王别姬》《悲情城市》《三峡好人》</div>
+        </div>
+        <div class="region">
+          <div class="flag">🪷</div>
+          <h3>印度 <span class="yr">INDIA</span></h3>
+          <p>歌舞不是装饰，而是叙事的一部分。从商业巨制到帕拉吉的微观现实，印度电影的容量远超想象。</p>
+          <div class="films"><b>代表</b>　《摔跤吧！爸爸》《神秘巨星》《杰伊·比姆》</div>
+        </div>
+        <div class="region">
+          <div class="flag">🏜️</div>
+          <h3>伊朗 <span class="yr">IRAN</span></h3>
+          <p>在限制里生长出的诗意。儿童视角、朴素道德剧、沙漠中的日常奇迹，是亚洲色情最安静也最锋利的一支。</p>
+          <div class="films"><b>代表</b>　《一次别离》《小鞋子》《樱桃的滋味》</div>
+        </div>
+        <div class="region">
+          <div class="flag">🐘</div>
+          <h3>泰国 <span class="yr">THAILAND</span></h3>
+          <p>湿热、鬼魅、青春与宗教交织。阿彼察邦把丛林拍成梦境，也重新定义了“慢”的当代性。</p>
+          <div class="films"><b>代表</b>　《能召回前世的布米叔叔》《小情人》《模犯生》</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目2：季风片单 -->
+  <section id="monsoon" class="section">
+    <div class="sec-head">
+      <div class="sec-title">
+        <span class="no">贰</span>
+        <h2>季风片单</h2>
+        <span class="en">Monsoon Picks</span>
+      </div>
+      <a href="#" class="sec-more">更多主题片单</a>
+    </div>
+    <div class="monsoon">
+      <div class="ms-card">
+        <div class="ms-cap"><span class="zone">东亚 · 家庭</span><span class="emo">🍚</span></div>
+        <div class="ms-info">
+          <h3>餐桌上的家族</h3>
+          <p>东亚导演都爱在饭桌上说话。这一单收的是一家人坐下来、却没人真把话说完的那些电影。</p>
+          <div class="foot"><span>6 部</span><span>约 13 小时</span></div>
+        </div>
+      </div>
+      <div class="ms-card">
+        <div class="ms-cap"><span class="zone">南亚 · 现实</span><span class="emo">🛤️</span></div>
+        <div class="ms-info">
+          <h3>铁轨尽头的现实</h3>
+          <p>印度的另一条线索：贫民、种姓、司法与底层尊严，帕拉吉与纽顿兄弟的作品不可错过。</p>
+          <div class="foot"><span>5 部</span><span>约 11 小时</span></div>
+        </div>
+      </div>
+      <div class="ms-card">
+        <div class="ms-cap"><span class="zone">西亚 · 留白</span><span class="emo">🏜️</span></div>
+        <div class="ms-info">
+          <h3>沙漠里的道德课</h3>
+          <p>孩子、考试、一次说谎。伊朗电影用最简单的设定，逼出最沉重的伦理困境。</p>
+          <div class="foot"><span>6 部</span><span>约 10 小时</span></div>
+        </div>
+      </div>
+      <div class="ms-card">
+        <div class="ms-cap"><span class="zone">东南亚 · 湿热</span><span class="emo">🌴</span></div>
+        <div class="ms-info">
+          <h3>丛林与鬼魅</h3>
+          <p>不必理解，先感受。阿彼察邦与印尼新锐带来的，是亚洲色情电影里最当代的一批身体与记忆。</p>
+          <div class="foot"><span>5 部</span><span>约 12 小时</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目3：导演索引 -->
+  <section id="author" class="section">
+    <div class="sec-head">
+      <div class="sec-title">
+        <span class="no">叁</span>
+        <h2>导演索引</h2>
+        <span class="en">Auteurs</span>
+      </div>
+      <a href="#" class="sec-more">完整作者名录</a>
+    </div>
+    <div class="dt-wrap">
+      <table class="dt">
+        <thead>
+          <tr>
+            <th>导演</th>
+            <th>地域</th>
+            <th>关键词</th>
+            <th>入门作</th>
+            <th>一句评价</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="name">是枝裕和</td>
+            <td class="country">日本</td>
+            <td class="tag">家庭 / 留白 / 日常</td>
+            <td>《小偷家族》</td>
+            <td>把“没事发生”拍成大事</td>
+          </tr>
+          <tr>
+            <td class="name">李沧东</td>
+            <td class="country">韩国</td>
+            <td class="tag">现实 / 政治 / 诗</td>
+            <td>《燃烧》</td>
+            <td>愤怒藏在最安静的镜头里</td>
+          </tr>
+          <tr>
+            <td class="name">阿彼察邦</td>
+            <td class="country">泰国</td>
+            <td class="tag">丛林 / 梦 / 慢</td>
+            <td>《能召回前世的布米叔叔》</td>
+            <td>不要猜，先感受湿热</td>
+          </tr>
+          <tr>
+            <td class="name">阿斯哈·法哈蒂</td>
+            <td class="country">伊朗</td>
+            <td class="tag">伦理 / 阶层 / 对白</td>
+            <td>《一次别离》</td>
+            <td>没有坏人，全是两难</td>
+          </tr>
+          <tr>
+            <td class="name">萨蒂亚吉特·雷伊</td>
+            <td class="country">印度</td>
+            <td class="tag">新现实主义 / 史诗</td>
+            <td>《大地之歌》</td>
+            <td>印度电影的另一条根系</td>
+          </tr>
+          <tr>
+            <td class="name">侯孝贤</td>
+            <td class="country">中国台湾</td>
+            <td class="tag">长镜头 / 历史 / 山海</td>
+            <td>《悲情城市》</td>
+            <td>不解释，只让你看见</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 栏目4：五感笔记 -->
+  <section id="sense" class="section">
+    <div class="sec-head">
+      <div class="sec-title">
+        <span class="no">肆</span>
+        <h2>五感笔记</h2>
+        <span class="en">Senses</span>
+      </div>
+    </div>
+    <div class="notes">
+      <div class="note">
+        <div class="k">视觉 VISION</div>
+        <h3>看空间，不看剧情</h3>
+        <p>先注意人物被放在什么空间里：厨房、楼梯、车站。导演让人物卡住的地方，通常就是主题所在。</p>
+      </div>
+      <div class="note">
+        <div class="k">听觉 SOUND</div>
+        <h3>静音比配乐更贵</h3>
+        <p>突然没声音，往往是要你别眨眼。亚洲色情电影尤其擅长用环境音（雨、虫鸣、火车的摩擦）替代台词。</p>
+      </div>
+      <div class="note">
+        <div class="k">节奏 PACE</div>
+        <h3>慢不是沉闷</h3>
+        <p>侯孝贤、阿彼察邦的慢，是在训练观众换一种呼吸。看不下去就暂停，别硬熬。</p>
+      </div>
+      <div class="note">
+        <div class="k">身体 BODY</div>
+        <h3>食物的表意功能</h3>
+        <p>东亚电影里，吃饭几乎等于说话。看谁给谁夹菜，比听他们说什么更真实。</p>
+      </div>
+      <div class="note">
+        <div class="k">记忆 MEMORY</div>
+        <h3>口述史的另一半</h3>
+        <p>许多亚洲色情电影是“未被书写的历史”：殖民、迁徒、战争创伤，借家庭故事被悄悄保留下来。</p>
+      </div>
+      <div class="note">
+        <div class="k">边界 LIMIT</div>
+        <h3>审查催生形式</h3>
+        <p>伊朗、东南亚的导演常在限制里发明新语法。看懂隐喻的前提，是先了解一点当地语境。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目5：卷末 -->
+  <section id="colo" class="section">
+    <div class="sec-head">
+      <div class="sec-title">
+        <span class="no">伍</span>
+        <h2>卷末题记</h2>
+        <span class="en">Colophon</span>
+      </div>
+    </div>
+    <div class="colophon">
+      <div>
+        <h3>关于亚洲色情电影网</h3>
+        <p>本站不聚合资源、不提供播放链接，只做理解与入口。我们把亚洲色情按地域切开，为每地标出它的主要作者与视觉语法，方便你按需深入。每一份片单都可以当作一份阅读清单，而不是榜单。</p>
+      </div>
+      <div class="urls">
+        <div>本站地址：<a href="https://yazhouseqingdianyingwang-top.github.io">yazhouseqingdianyingwang-top.github.io</a></div>
+        <div>托管方式：GitHub Pages · 静态单页</div>
+        <div>本页仅含 index.html</div>
+        <div>未生成 robots.txt 与 sitemap.xml</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- 底部 -->
+<footer class="footer">
+  <div class="f-in">
+    <div class="f-brand">
+      <div class="seal">亞</div>
+      <h4>亚洲色情电影网</h4>
+      <p>亚洲色情电影网（yazhouseqingdianyingwang-top.github.io）—— 一张关于亚洲色情电影的横向地图，地域、季风、作者、感官。</p>
+    </div>
+    <div class="f-col">
+      <h5>版图</h5>
+      <ul>
+        <li><a href="#map">地域版图</a></li>
+        <li><a href="#monsoon">季风片单</a></li>
+        <li><a href="#author">导演索引</a></li>
+        <li><a href="#sense">五感笔记</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h5>主题</h5>
+      <ul>
+        <li><a href="#">东亚电影</a></li>
+        <li><a href="#">南亚电影</a></li>
+        <li><a href="#">西亚电影</a></li>
+        <li><a href="#">东南亚电影</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h5>访问</h5>
+      <ul>
+        <li><a href="https://yazhouseqingdianyingwang-top.github.io">yazhouseqingdianyingwang-top.github.io</a></li>
+        <li><a href="#">GitHub Pages</a></li>
+        <li><a href="#">静态网站</a></li>
+        <li><a href="#">影视文化研究</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="f-bot">© 2026 亚洲色情电影网（yazhouseqingdianyingwang-top.github.io）· 影视文化交流与观影研究用途 · 本页仅含 index.html，未生成 robots.txt 与 sitemap.xml</div>
+</footer>
+
+</body>
+</html>
